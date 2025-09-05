@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+  
+  body {
+    @apply bg-background text-white;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface/80 backdrop-blur-sm border border-gray-700/50 rounded-lg shadow-card;
+  }
+  
+  .network-glow {
+    @apply relative;
+  }
+  
+  .network-glow::before {
+    content: '';
+    @apply absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/20 to-emerald-400/20 blur-sm;
+  }
+  
+  .pulse-ring {
+    @apply absolute inset-0 rounded-full border-2 border-cyan-400/30 animate-ping;
+  }
+  
+  .connection-line {
+    @apply absolute w-px bg-gradient-to-b from-cyan-400/50 via-emerald-400/30 to-transparent;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-cyan-500 text-white px-6 py-3 rounded-lg font-medium hover:from-primary/90 hover:to-cyan-500/90 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface/80 text-white border border-gray-700/50 px-6 py-3 rounded-lg font-medium hover:bg-surface transition-all duration-200;
+  }
+  
+  .metric-card {
+    @apply glass-card p-4 hover:bg-surface/90 transition-all duration-200;
+  }
+  
+  .message-card {
+    @apply glass-card p-4 hover:bg-surface/90 transition-all duration-200 border-l-4;
+  }
+  
+  .message-card.incoming {
+    @apply border-l-cyan-400;
+  }
+  
+  .message-card.outgoing {
+    @apply border-l-emerald-400;
+  }
+  
+  .network-icon {
+    @apply w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium;
+  }
+  
+  .network-icon.farcaster {
+    @apply bg-purple-500/20 text-purple-300 border border-purple-500/30;
+  }
+  
+  .network-icon.telegram {
+    @apply bg-blue-500/20 text-blue-300 border border-blue-500/30;
+  }
+  
+  .network-icon.twitter {
+    @apply bg-cyan-500/20 text-cyan-300 border border-cyan-500/30;
+  }
+}
