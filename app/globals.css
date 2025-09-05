@@ -8,14 +8,16 @@
   }
   
   body {
-    @apply bg-background text-white;
+    @apply text-white;
+    background: hsl(218 16% 16%);
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply bg-surface/80 backdrop-blur-sm border border-gray-700/50 rounded-lg shadow-card;
+    @apply backdrop-blur-sm border border-gray-700/50 rounded-lg shadow-card;
+    background: hsla(218, 16%, 22%, 0.8);
   }
   
   .network-glow {
@@ -40,15 +42,28 @@
   }
   
   .btn-secondary {
-    @apply bg-surface/80 text-white border border-gray-700/50 px-6 py-3 rounded-lg font-medium hover:bg-surface transition-all duration-200;
+    @apply text-white border border-gray-700/50 px-6 py-3 rounded-lg font-medium transition-all duration-200;
+    background: hsla(218, 16%, 22%, 0.8);
+  }
+  
+  .btn-secondary:hover {
+    background: hsl(218, 16%, 22%);
   }
   
   .metric-card {
-    @apply glass-card p-4 hover:bg-surface/90 transition-all duration-200;
+    @apply glass-card p-4 transition-all duration-200;
+  }
+  
+  .metric-card:hover {
+    background: hsla(218, 16%, 22%, 0.9);
   }
   
   .message-card {
-    @apply glass-card p-4 hover:bg-surface/90 transition-all duration-200 border-l-4;
+    @apply glass-card p-4 transition-all duration-200 border-l-4;
+  }
+  
+  .message-card:hover {
+    background: hsla(218, 16%, 22%, 0.9);
   }
   
   .message-card.incoming {
