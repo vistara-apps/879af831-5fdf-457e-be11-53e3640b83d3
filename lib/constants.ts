@@ -50,7 +50,7 @@ export const MOCK_MESSAGES = [
   },
   {
     messageId: '2',
-    network: 'telegram',
+    network: 'telegram' as NetworkType,
     sender: 'Base Builders',
     content: 'New grant program announced! Applications open for innovative Base projects.',
     timestamp: new Date(Date.now() - 1000 * 60 * 60 * 2),
@@ -59,7 +59,7 @@ export const MOCK_MESSAGES = [
   },
   {
     messageId: '3',
-    network: 'twitter',
+    network: 'twitter' as NetworkType,
     sender: 'coinbase',
     content: 'Building the future of finance, one block at a time 🚀',
     timestamp: new Date(Date.now() - 1000 * 60 * 60 * 4),
