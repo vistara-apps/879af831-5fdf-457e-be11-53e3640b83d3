@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "NexusFlow",
+    "subtitle": "Built with Zara",
+    "description": "NexusFlow is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://879af8315fdf457ebe1153e3640b83d3-y1kj.vercel.app",
+    "splashImageUrl": "https://879af8315fdf457ebe1153e3640b83d3-y1kj.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://879af8315fdf457ebe1153e3640b83d3-y1kj.vercel.app/image.png",
+    "tagline": "NexusFlow",
+    "screenshotUrls": [
+      "https://879af8315fdf457ebe1153e3640b83d3-y1kj.vercel.app/screenshot.png",
+      "https://879af8315fdf457ebe1153e3640b83d3-y1kj.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://879af8315fdf457ebe1153e3640b83d3-y1kj.vercel.app/api/webhook"
+  }
+}

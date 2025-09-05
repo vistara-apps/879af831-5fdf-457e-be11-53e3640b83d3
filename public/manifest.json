@@ -1,0 +1,14 @@
+{
+  "name": "NexusFlow",
+  "description": "NexusFlow is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://879af831-5fdf-457e-be11-53e3640b83d3.vercel.app",
+  "properties": {
+    "app": {
+      "name": "NexusFlow",
+      "description": "NexusFlow is a Base Mini App built with Zara.",
+      "url": "https://879af831-5fdf-457e-be11-53e3640b83d3.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
